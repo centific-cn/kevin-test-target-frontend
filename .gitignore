@@ -2,3 +2,7 @@ node_modules
 dist
 coverage
 .vite
+debug-storybook.log
+vitest.shims.d.ts
+.claudeignore
+.kevin/
