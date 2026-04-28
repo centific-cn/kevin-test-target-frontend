@@ -1,0 +1,33 @@
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.sm {
+  width: 32px;
+  height: 32px;
+  font-size: 0.75rem;
+}
+
+.md {
+  width: 40px;
+  height: 40px;
+  font-size: 0.875rem;
+}
+
+.lg {
+  width: 48px;
+  height: 48px;
+  font-size: 1rem;
+}
+
+.initials {
+  background-color: #6366f1;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
