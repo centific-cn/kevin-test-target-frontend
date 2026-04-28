@@ -16,7 +16,7 @@ planner_rationale_log:
       dispatch_agent per epic_command_room rule). When IssueCreatedEvent fires on the child, I will dispatch the
       specialist on that task issue.
     triggering_event_type: IssueCreatedEvent
-updated_at: '2026-04-28T01:55:11.132Z'
+updated_at: '2026-04-28T01:55:55.202Z'
 nodes:
   '9':
     parent: null
@@ -31,4 +31,6 @@ nodes:
     children: []
     status: open
     subtree_summary: Implement UserAvatar component with image/initials fallback and tests
+    readiness_content_fingerprint: b19f4bee65591316062721a36bae68d3608d46d97f20d3ece26b54f08d01390f
+    readiness_passed_at: '2026-04-28T01:55:55.202Z'
 ---
