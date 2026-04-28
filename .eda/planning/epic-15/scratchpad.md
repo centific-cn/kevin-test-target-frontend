@@ -16,7 +16,7 @@ planner_rationale_log:
       epic_command_room constraint, I created a sub-issue instead of dispatching from the epic root. The IssueCreated
       event on the child will trigger the next wakeup where the specialist will be dispatched.
     triggering_event_type: IssueCreatedEvent
-updated_at: '2026-04-28T04:18:52.704Z'
+updated_at: '2026-04-28T04:19:08.854Z'
 nodes:
   '15':
     parent: null
@@ -31,4 +31,6 @@ nodes:
     children: []
     status: open
     subtree_summary: 'Fix Button component disabled state: styling, click prevention, and tests'
+    readiness_content_fingerprint: d238e5e6b49f21e05278ea07512b5f3d191a10dc5724beb4f8417b6897cf4cf1
+    readiness_passed_at: '2026-04-28T04:19:08.854Z'
 ---
