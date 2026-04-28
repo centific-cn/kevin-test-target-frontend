@@ -2,7 +2,7 @@
 correlation_id: c77f3497-33fe-4588-a078-b722b5e8df36
 root_issue_number: 6
 planning_agent_state: PHASE_IN_PROGRESS
-issue_path: '6'
+issue_path: 6→11
 tree_complete: false
 planner_rationale_log:
   - at: '2026-04-27T09:43:35.820Z'
@@ -36,7 +36,18 @@ planner_rationale_log:
       child will enable the DevOps specialist to ship the merged component to production. BA, architecture, and FIP
       phases remain skipped per the original atomic classification.
     triggering_event_type: IssueClosedEvent
-updated_at: '2026-04-28T01:58:14.786Z'
+  - at: '2026-04-28T01:59:17.415Z'
+    focus_issue: 11
+    new_state: PHASE_IN_PROGRESS
+    text: >-
+      **atomic_change** — IssueCreatedEvent on child task issue #11 triggers dispatch of DevOps specialist for
+      deployment. The breakdown handoff confirms this is an atomic deploy task with
+      BA/Architecture/FIP/Implementation/Test phases already completed or intentionally skipped. Issue #7 closed with
+      merged PR #8 delivering the StatusBadge component, so the deployment child #11 should dispatch
+      bp_devops_playbook_execution.1.0.0 to ship it to production. This follows the implement → test (embedded) → deploy
+      flow per the implementation_test_deploy_followthrough policy.
+    triggering_event_type: IssueCreatedEvent
+updated_at: '2026-04-28T01:59:18.860Z'
 nodes:
   '6':
     parent: null
@@ -109,6 +120,9 @@ nodes:
     children: []
     status: open
     subtree_summary: Deploy merged StatusBadge component to production
+    last_dispatched_blueprint: bp_devops_playbook_execution.1.0.0
+    executor_run_ids:
+      - 810adb22-afeb-4b21-a63c-71466456f930
     readiness_content_fingerprint: 7a91cb44804a8a756f403423040e222ad8ce5036d55d351c8063cd6d8380b99c
     readiness_passed_at: '2026-04-28T01:58:14.786Z'
 ---
